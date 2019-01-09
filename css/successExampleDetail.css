@@ -1,0 +1,132 @@
+body {
+	background-color: #f2f2f2;
+}
+.header-bg {
+	background-image: url('../assets/images/success-example-detail-bg.png');
+	background-size: 100% 100%;
+	height: 30vh;
+}
+.content-inner {
+	margin-top: 5vw;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	border-radius: 8px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+.content-header {
+	color: #333333;
+	text-align: center;
+	padding: 0.75rem 0 0.5rem 0;
+}
+.time {
+	color: #999999;
+	text-align: center;
+	font-size: 0.65rem;
+}
+.description {
+	text-align: center;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border: 1px solid rgb(101, 184, 27);
+	height: 22vh;
+	width: 90%;
+	padding-top: 2vh;
+	margin: 2vh auto;
+	background-image: url('../assets/images/userdescribe_bg.png');
+	background-size: 100% 100%;
+	box-shadow: 0px 8px 16px #e7e7e7;
+}
+.description .label {
+	color: #666666;
+}
+.description .content-text {
+	color: #333333;
+}
+.user-gallery {
+	text-align: center;
+	padding: 0.75rem 0;
+}
+.gallery-img {
+	width: 50%;
+	height: 50vh;
+	background-color: #999999;
+}
+.indicate {
+	color: #65b81b;
+}
+.describe {
+	color: #65b81b;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.solution-header {
+	display: flex;
+	align-items: center;
+}
+.solution-content {
+	padding: 0.5rem 0.2rem;
+	display: flex;
+}
+.comment-des {
+	padding: 0.75rem 0 0.75rem 0;
+	text-align: center;
+}
+/* 列表 */
+.comment-wrapper {
+	background-color: #f2f2f2;
+}
+.list-block ul {
+	background-color: #f2f2f2;
+}
+.list-block {
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0 auto;
+}
+.list-block .item-inner {
+	align-items: unset;
+}
+.list-block .item-title {
+	width: 30vw;
+}
+img.list-image {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 8px;
+	background-color: darkgray;
+}
+.item-inner {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 0.75rem;
+}
+.article-title {
+	color: #999999;
+}
+.article-date {
+	color: #333333;
+}
+.card-content-inner {
+	padding: 0px;
+	margin: 0 1vw;
+}
+.thumb {
+	display: flex;
+	align-items: center;
+}
+.icon-local {
+	font-size: 1.2rem;
+}
+.comments-write {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 1rem;
+}
+.comments-icon {
+	margin: 5px;
+	display: flex;
+	align-items: center;
+}

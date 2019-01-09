@@ -1,0 +1,77 @@
+body {
+	color: #666666;
+}
+.header-bg {
+	background-image: url('../assets/images/success-example-bg.png');
+	background-size: 100% 100%;
+	height: 25vh;
+}
+.card {
+	border-radius: 5px;
+}
+
+.header-card,
+.footer-card {
+	font-size: 0.9rem;
+	color: #333333;
+	min-height: 2.2rem;
+	padding: 0 0rem 0 0.75rem;
+	position: relative;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.header-card {
+	padding: 0 0.75rem 0 0;
+}
+.list-block {
+	width: 100%;
+}
+.card-content-inner {
+	padding: 0 0.75rem 0.75rem 0.75rem;
+}
+.header-title {
+	border-left: 5px solid #58ab0f;
+	line-height: 5vw;
+}
+.img-wrap {
+	padding: 0 0.75rem 0rem 0.75rem;
+}
+img.example-piclist {
+	width: 30vw;
+	height: 30vw;
+}
+.card-footer .list-block {
+	width: 100%;
+}
+.list-block .item-content {
+	padding-left: 0;
+}
+.list-block .item-media + .item-inner {
+	margin-left: 0;
+}
+.card-footer {
+	min-height: 2.2rem;
+	position: relative;
+	padding: 0 0.75rem;
+}
+.label-button span {
+	color: #58ab0f;
+	font-size: 0.8rem;
+	padding: 5px 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: #eef6e7;
+	border: 1px solid #eef6e7;
+}
+.time-stamp {
+	font-size: 0.65rem;
+	color: #999999;
+}
