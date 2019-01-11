@@ -1,11 +1,32 @@
-// 轮播
 $(function() {
+	// 轮播
+	/*
+ * 菜单移动到顶部后定位在顶部
+ * message[菜单的id名或者class类名]
+ * height[菜单距离顶部的距离]
+ */
+	function navChangeArea(message, height) {
+		var liveDiv = $('#' + message).length ? $('#' + message) : $('.' + message);
+		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		if (scrollTop < height) {
+			liveDiv.css('position', 'relative');
+		} else {
+			liveDiv.css('position', 'fixed');
+		}
+	}
+	$(window).bind('scroll', function() {
+		navChangeArea('liveDiv', 100);
+	});
+	$(window).bind('touchmove', function() {
+		navChangeArea('liveDiv', 100);
+	});
+
 	var config = {
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 		centeredSlides: true,
 		autoplay: 2500,
-		autoplayDisableOnInteraction: false,
+		autoplayDisableOnInteraction: false
 	};
 	$('.swiper-container').swiper(config);
 

@@ -2,6 +2,11 @@
 .page-group {
 	background-color: #f2f2f2;
 }
+.page-group.page-current,
+.page.page-current {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
 .list-block {
 	height: 80vh;
 	overflow-x: hidden;
@@ -14,8 +19,9 @@
 	color: #6d6d72;
 }
 .swiper-container {
-	margin-top: 2vh;
+	padding-top: 1vh;
 	padding-bottom: 0;
+	background-color: #ffffff;
 }
 .swiper-slide {
 	padding: 2vw 3vw;
@@ -41,15 +47,20 @@
 	border-color: #65b81b;
 	z-index: 100;
 }
-.tab-logo img {
-	width: 6vw;
-	height: 8vw;
-}
+
 .list-block .item-media + .item-inner {
 	margin-left: 0;
 }
-img.list-image {
+.list-block .item-title {
 	width: 30vw;
+	height: 13.5vh;
+}
+.list-block .item-inner {
+	display: flex;
+	align-items: stretch;
+}
+img.list-image {
+	width: 100%;
 	height: 100%;
 	border-radius: 8px;
 	background-color: darkgray;
@@ -59,6 +70,7 @@ img.list-image {
 	margin-left: 10px;
 	float: left;
 	width: 67%;
+	position: relative;
 }
 .article-title {
 	color: #333333;
@@ -76,15 +88,43 @@ img.list-image {
 	font-size: 0.65rem;
 	color: #999999;
 }
-.label-button {
-	margin-top: 1vh;
+.label-time {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
+
 .label-button span {
 	color: #58ab0f;
-	font-size: 0.8rem;
+	font-size: 0.65rem;
 	padding: 5px 10px;
 	border-bottom-left-radius: 20px;
 	border-top-right-radius: 20px;
 	background-color: #eef6e7;
 	border: 1px solid #eef6e7;
+}
+/* 二级切换 */
+.tab3-inner {
+	background: #f2f2f2 !important;
+}
+.tabs-inner {
+	background: #ffff !important;
+	height: 6vh;
+}
+.tabs-inner .button {
+	height: 5vh;
+	color: #666666;
+}
+.inner-tab-button {
+	border: 0px solid #999999;
+	border-radius: 5px;
+	padding: 2px 0;
+	background-color: rgba(0, 0, 0, 0.04);
+}
+.tabs-inner .button.active {
+	color: #333333;
+	border-bottom: none;
 }

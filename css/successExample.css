@@ -1,3 +1,9 @@
+.text-truncate {
+	word-wrap: normal; /* for IE */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
 body {
 	color: #666666;
 }
@@ -64,7 +70,7 @@ img.example-piclist {
 }
 .label-button span {
 	color: #58ab0f;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	padding: 5px 10px;
 	border-bottom-left-radius: 20px;
 	border-top-right-radius: 20px;
