@@ -1,0 +1,98 @@
+.page-group.page-current,
+.page.page-current {
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.product-header-bg {
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.header-bg {
+  height: 25vh;
+  background-image: url('../assets/images/product-header.png');
+  background-size: 100% 100%;
+
+
+}
+
+.description-text {
+  margin: 1.5vh 0;
+  font-size: 0.7rem;
+  padding: 0 7%;
+}
+
+/* 卡片 */
+.first-card .card {
+  background-color: #f0f0f0;
+  box-shadow: none;
+  border: none;
+}
+
+.first-card .card-content {
+  background-image: url('../assets/images/product-card.png');
+  background-size: 100% 100%;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.first-card .card-content-inner {
+  padding: 0px 0.75rem 0.1rem 0;
+}
+
+.first-card .card-inner-button {
+  color: #333333;
+  border: 1px solid #f2d73f;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #f2d73f;
+}
+
+.first-card .text {
+  color: white;
+  font-size: 0.8rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  line-height: 1.2rem;
+}
+
+.first-card .text:before {
+  content: "\2022";
+  color: #f2d73f;
+  font-size: 1.2rem;
+  margin-right: 10px;
+
+}
+
+/* 底部介绍 */
+.detailed-text .card {
+  border-radius: .3rem;
+}
+
+.detailed-text .text {
+  color: #333333;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.2rem;
+}
+
+.detailed-text .text:before {
+  content: "\2022";
+  color: #f2d73f;
+  font-size: 1.2rem;
+  margin-right: 10px;
+
+}
+
+.descript-ul {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px dashed rgb(204, 204, 204);
+  border-radius: 5px;
+  position: relative;
+}
