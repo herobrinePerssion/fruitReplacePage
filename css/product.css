@@ -52,6 +52,7 @@
 }
 
 .first-card .text {
+  position: relative;
   color: white;
   font-size: 0.8rem;
   list-style: none;
@@ -60,12 +61,22 @@
   line-height: 1.2rem;
 }
 
-.first-card .text:before {
+.detailed-text .text:before {
   content: "\2022";
+  font-weight: bold;
   color: #f2d73f;
   font-size: 1.2rem;
   margin-right: 10px;
+}
 
+.detailed-text .text::after {
+  content: ">";
+  color: #f2d73f;
+  /* font-size: 1.2rem; */
+  /* margin-right: 10px; */
+  left: 3px;
+  font-weight: bold;
+  position: absolute;
 }
 
 /* 底部介绍 */
@@ -75,17 +86,23 @@
 
 .detailed-text .text {
   color: #333333;
+  padding-left: 20px;
+  border-left: 1px solid #333333;
   list-style: none;
+  position: relative;
   display: flex;
   align-items: flex-start;
   line-height: 1.2rem;
 }
 
 .detailed-text .text:before {
+  font-weight: bold;
   content: "\2022";
   color: #f2d73f;
   font-size: 1.2rem;
   margin-right: 10px;
+  position: absolute;
+  left: -5px;
 
 }
 
